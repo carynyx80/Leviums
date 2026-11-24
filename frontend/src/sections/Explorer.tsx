@@ -22,7 +22,7 @@ export function Explorer() {
         <SectionHead
           eyebrow="Live explorer"
           title={<>Every receipt, <span className="grad-text">in public.</span></>}
-          sub="The latest receipts issued by Levium nodes. Refreshes every 5 seconds."
+          sub="The latest receipts issued by Keelcodes nodes. Refreshes every 5 seconds."
         />
         <Reveal>
           <div className="explorer-card">

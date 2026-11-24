@@ -173,7 +173,7 @@ export function Playground() {
                   onChange={(e) => setValues((v) => ({ ...v, [field]: e.target.value }))}
                 />
                 <button type="submit" className="btn btn-primary" disabled={!valid || ask.isPending}>
-                  {ask.isPending ? <><span className="spinner sm dark" /> Running…</> : <>Ask Levium <IconArrow width={16} height={16} /></>}
+                  {ask.isPending ? <><span className="spinner sm dark" /> Running…</> : <>Ask Keelcodes <IconArrow width={16} height={16} /></>}
                 </button>
               </div>
               <div className="pg-hints">
@@ -283,7 +283,7 @@ export function Playground() {
                     )}
                     {anchorErr && <p className="err-text small">{anchorErr}</p>}
                     {!anchorHash && anchorStage === 'idle' && (
-                      <p className="pg-note">Anchoring sends a 0 BNB tx to the Levium treasury with the receipt id as calldata. You only pay gas (~$0.01).</p>
+                      <p className="pg-note">Anchoring sends a 0 BNB tx to the Keelcodes treasury with the receipt id as calldata. You only pay gas (~$0.01).</p>
                     )}
                     <AnimatePresence>
                       {verify && (

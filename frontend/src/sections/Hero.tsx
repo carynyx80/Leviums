@@ -87,7 +87,7 @@ function ReceiptCard() {
       <div className="receipt-glow" />
       <div className="receipt">
         <div className="receipt-top">
-          <span className="receipt-title">LEVIUM RECEIPT</span>
+          <span className="receipt-title">KEELCODES RECEIPT</span>
           <span className="pill pill-lime">ATTESTED</span>
         </div>
         <div className="receipt-q">

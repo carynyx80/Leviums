@@ -46,8 +46,8 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Levium</span>
-          <span className="footer-word" aria-hidden="true">levium</span>
+          <span>© {new Date().getFullYear()} Keelcodes</span>
+          <span className="footer-word" aria-hidden="true">keelcodes</span>
         </div>
       </div>
     </footer>

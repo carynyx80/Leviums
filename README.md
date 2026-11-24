@@ -1,4 +1,4 @@
-# Levium — AI with a receipt
+# Keelcodes — AI with a receipt
 
 Verifiable AI on BNB Chain (mainnet only). Every AI answer comes with a signed, hash-committed receipt anyone can verify and anchor on BNB mainnet.
 

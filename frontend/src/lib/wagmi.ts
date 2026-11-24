@@ -12,15 +12,15 @@ if (wcProjectId) {
       projectId: wcProjectId,
       showQrModal: true,
       metadata: {
-        name: 'Levium',
+        name: 'Keelcodes',
         description: 'AI with a receipt — verifiable AI on BNB Chain',
-        url: typeof window !== 'undefined' ? window.location.origin : 'https://levium.ai',
+        url: typeof window !== 'undefined' ? window.location.origin : 'https://www.keelcode.xyz',
         icons: [typeof window !== 'undefined' ? `${window.location.origin}/favicon.svg` : ''],
       },
     }),
   )
 }
-connectors.push(coinbaseWallet({ appName: 'Levium' }))
+connectors.push(coinbaseWallet({ appName: 'Keelcodes' }))
 
 export const config = createConfig({
   chains: [bsc],

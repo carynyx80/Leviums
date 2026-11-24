@@ -171,7 +171,7 @@ function WalletModal({ open, onClose }: { open: boolean; onClose: () => void }) 
                 </span>
               </div>
             )}
-            <p className="modal-foot">Levium never asks for your seed phrase. Connecting is free and read-only.</p>
+            <p className="modal-foot">Keelcodes never asks for your seed phrase. Connecting is free and read-only.</p>
           </motion.div>
         </motion.div>
       )}

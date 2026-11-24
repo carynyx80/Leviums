@@ -62,7 +62,7 @@ export function Stats() {
               </span>
             </div>
           </div>
-          {offline && <p className="stats-note">Live stats are temporarily unavailable — the Levium node isn’t responding. Chain data above is read directly from BNB mainnet.</p>}
+          {offline && <p className="stats-note">Live stats are temporarily unavailable — the Keelcodes node isn’t responding. Chain data above is read directly from BNB mainnet.</p>}
         </Reveal>
       </div>
     </section>

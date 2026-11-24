@@ -116,8 +116,8 @@ async function request<T>(path: string, init?: RequestInit & { timeoutMs?: numbe
     return data as T
   } catch (e) {
     if (e instanceof ApiError) throw e
-    if (e instanceof DOMException && e.name === 'AbortError') throw new ApiError('The Levium node took too long to respond.', 0)
-    throw new ApiError('Could not reach the Levium node. Is the API online?', 0)
+    if (e instanceof DOMException && e.name === 'AbortError') throw new ApiError('The Keelcodes node took too long to respond.', 0)
+    throw new ApiError('Could not reach the Keelcodes node. Is the API online?', 0)
   } finally {
     clearTimeout(t)
   }

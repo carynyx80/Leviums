@@ -3,7 +3,7 @@ import { SectionHead } from '../components/Reveal'
 import { IconCheck } from '../components/Icons'
 
 const TIERS = [
-  { name: 'Attested', status: 'LIVE', live: true, desc: 'A pinned model runs in a Levium node. Every output is hash-committed and signed by the node’s attestation key. Verifiable by anyone, anchorable on BNB mainnet.', points: ['Model fingerprint + I/O hashes', 'EIP-191 signature', 'On-chain anchoring today'] },
+  { name: 'Attested', status: 'LIVE', live: true, desc: 'A pinned model runs in a Keelcodes node. Every output is hash-committed and signed by the node’s attestation key. Verifiable by anyone, anchorable on BNB mainnet.', points: ['Model fingerprint + I/O hashes', 'EIP-191 signature', 'On-chain anchoring today'] },
   { name: 'Challengeable', status: 'COMING SOON', live: false, desc: 'Deterministic models can be re-executed by anyone. Post a bond, dispute a receipt on-chain, and slash a dishonest node.', points: ['Re-execution by watchers', 'Bonded nodes & slashing', 'BNB Chain dispute contract'] },
   { name: 'Zero-knowledge proof', status: 'COMING SOON', live: false, desc: 'A succinct proof that the exact model produced the exact output — checked by a smart contract, no trusted signer at all.', points: ['zkML circuits', 'On-chain verifier', 'Trustless by math'] },
 ]
@@ -16,7 +16,7 @@ export function Tiers() {
           center
           eyebrow="Trust tiers"
           title={<>Honest about <span className="grad-text">what’s live.</span></>}
-          sub="Levium ships trust in layers. Attested receipts are live on BNB mainnet today; stronger guarantees are on the roadmap."
+          sub="Keelcodes ships trust in layers. Attested receipts are live on BNB mainnet today; stronger guarantees are on the roadmap."
         />
         <div className="tier-grid">
           {TIERS.map((t, i) => (

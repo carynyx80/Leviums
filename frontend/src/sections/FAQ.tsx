@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { SectionHead, Reveal } from '../components/Reveal'
 
 const QA = [
-  ['What is a Levium receipt?', 'A small JSON object that commits to the model (by fingerprint), your input and the output (by keccak256 hashes), the BNB block it ran against, and a timestamp. All of that is hashed into a receiptHash and signed by the node’s attestation key. If any byte changes, verification fails.'],
-  ['Is it really on mainnet?', 'Yes. Levium runs on BNB Smart Chain mainnet (chainId 56) only — no testnet. Models read live mainnet state, and anchoring writes a real transaction you can inspect on BscScan.'],
+  ['What is a Keelcodes receipt?', 'A small JSON object that commits to the model (by fingerprint), your input and the output (by keccak256 hashes), the BNB block it ran against, and a timestamp. All of that is hashed into a receiptHash and signed by the node’s attestation key. If any byte changes, verification fails.'],
+  ['Is it really on mainnet?', 'Yes. Keelcodes runs on BNB Smart Chain mainnet (chainId 56) only — no testnet. Models read live mainnet state, and anchoring writes a real transaction you can inspect on BscScan.'],
   ['Is zero-knowledge proving live?', 'Not yet. Today receipts are in the Attested tier: signed by a known node key and verifiable by anyone. Challengeable (re-execution + slashing) and ZK proofs are on the roadmap, and we label them clearly as coming soon.'],
   ['What’s on the roadmap?', 'More models (wallet reputation, credit scoring, AI judges), an on-chain receipt registry contract on BNB Chain, challengeable receipts with bonded nodes, and eventually zkML proofs verified by smart contracts.'],
-  ['What does it cost?', 'Asking and verifying are free during launch. Anchoring a receipt on BNB mainnet only costs the network gas for a 0-BNB transaction — typically a cent or less. Levium takes no fee.'],
-  ['Can I verify without trusting Levium?', 'Yes. Recompute the hashes, then recover the signer with any Ethereum library (e.g. viem verifyMessage). The Developers section has a copy-paste example.'],
+  ['What does it cost?', 'Asking and verifying are free during launch. Anchoring a receipt on BNB mainnet only costs the network gas for a 0-BNB transaction — typically a cent or less. Keelcodes takes no fee.'],
+  ['Can I verify without trusting Keelcodes?', 'Yes. Recompute the hashes, then recover the signer with any Ethereum library (e.g. viem verifyMessage). The Developers section has a copy-paste example.'],
 ]
 
 export function FAQ() {

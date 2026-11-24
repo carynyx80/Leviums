@@ -16,9 +16,9 @@ export function LogoMark({ size = 28 }: { size?: number }) {
 
 export function Logo() {
   return (
-    <a href="#top" className="logo" aria-label="Levium home">
+    <a href="#top" className="logo" aria-label="Keelcodes home">
       <LogoMark />
-      <span className="logo-word">levium</span>
+      <span className="logo-word">keelcodes</span>
     </a>
   )
 }

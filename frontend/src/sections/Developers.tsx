@@ -56,7 +56,7 @@ import { bsc } from 'viem/chains'
 const wallet = createWalletClient({ chain: bsc, transport: custom(window.ethereum) })
 const [account] = await wallet.requestAddresses()
 
-// 0-BNB tx to the Levium treasury, receipt id as calldata
+// 0-BNB tx to the Keelcodes treasury, receipt id as calldata
 const txHash = await wallet.sendTransaction({
   account,
   to: '0x7d6b84648Fe791b2a2623b8B4D6fbB00ce7daB76',

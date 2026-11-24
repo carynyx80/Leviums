@@ -12,7 +12,7 @@ interface Step {
 }
 
 const STEPS: Step[] = [
-  { n: '01', title: 'Ask', body: 'Send a question to a Levium model — a token to scan, a wallet to score. Plain HTTPS, no wallet needed.', icon: <IconMsg width={22} height={22} />, tag: 'POST /v1/ask' },
+  { n: '01', title: 'Ask', body: 'Send a question to a Keelcodes model — a token to scan, a wallet to score. Plain HTTPS, no wallet needed.', icon: <IconMsg width={22} height={22} />, tag: 'POST /v1/ask' },
   { n: '02', title: 'AI runs in a sealed node', body: 'A pinned, fingerprinted model executes against live BNB mainnet state. The exact code and config are hashed, so nobody can swap the model behind your back.', icon: <IconCpu width={22} height={22} />, tag: 'model fingerprint' },
   { n: '03', title: 'Receipt is signed', body: 'Model fingerprint + input hash + output hash + block number are committed into one receiptHash and signed by the node’s attestation key (EIP-191).', icon: <IconSign width={22} height={22} />, tag: 'keccak256 · secp256k1' },
   { n: '04', title: 'Verify anywhere', body: 'Anyone can recompute the hashes and recover the signer — in the browser, in a smart contract, or with five lines of viem. No API trust required.', icon: <IconShield width={22} height={22} />, tag: 'verifyMessage()' },
@@ -32,7 +32,7 @@ export function HowItWorks() {
         <SectionHead
           eyebrow="How it works"
           title={<>From question to <span className="grad-text">on-chain proof</span> in five steps.</>}
-          sub="Levium turns an opaque AI call into a verifiable artifact. Here’s the full lifecycle of a receipt."
+          sub="Keelcodes turns an opaque AI call into a verifiable artifact. Here’s the full lifecycle of a receipt."
         />
         <div className="how-grid">
           <div className="how-visual-col">
