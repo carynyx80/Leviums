@@ -8,3 +8,4 @@ cache/
 broadcast/
 .DS_Store
 .vercel
+contracts/lib/
