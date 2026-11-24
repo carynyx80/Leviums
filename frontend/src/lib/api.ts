@@ -1,4 +1,4 @@
-export const API_URL = (import.meta.env.VITE_API_URL || 'https://levium-api-production.up.railway.app').replace(/\/+$/, '')
+export const API_URL = (import.meta.env.VITE_API_URL || 'https://api.keelcode.xyz').replace(/\/+$/, '')
 
 export const TREASURY = '0x7d6b84648Fe791b2a2623b8B4D6fbB00ce7daB76' as const
 
